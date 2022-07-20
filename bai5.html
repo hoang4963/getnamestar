@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let namestar = prompt(' nhap ten sao ');
+  let star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+  let cons = [ 'Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', ' Leo'];
+  function checkstar(ns)
+  {
+      let check = true;
+      let viTri
+      for ( let i = 0 ; i < star.length; i++) {
+          if (ns == star[i]) {
+              viTri = i;
+              break;
+          } else check = false;
+              }
+      if (check) {
+          alert(ns + " thuoc chom sao " + cons[viTri])
+      }
+      else alert(' khong biet ngoi sao nay')
+  }
+  checkstar(namestar);
+</script>
+
+</body>
+</html>
